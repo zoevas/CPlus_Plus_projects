@@ -4,7 +4,6 @@ namespace BinaryTree {
 	template <typename T>
 	class BinaryTree
 	{
-
 		Node<T>* root;
 
 

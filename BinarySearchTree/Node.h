@@ -5,13 +5,12 @@
 
 namespace BinaryTree {
 template <typename T>
-class Node
-{
-		public:
-			T data;
+class Node {
+        public:
+            T data;
 			Node<T>* left;
 			Node<T>* right;
-		public:
+        public:
 
             Node(T data) : data(data), left(nullptr), right(nullptr) {
                 this->data = data;
@@ -31,7 +30,7 @@ class Node
             // Member function definitions
             void insert(int data) {
                 if (this->data == data) {
-                    return; // no duplicates are allowed in BST
+                    return; // no duplicates are allowed 
                 } else if (data < this->data) {
                     if (left == nullptr) {
                         Node* node = new Node(data);
@@ -72,7 +71,7 @@ class Node
                     left->inOrderPrint();
                 } 
                 std::cout << data << " ";
-
+                
                 if (right != nullptr) {
                     right->inOrderPrint();
                 }
@@ -90,6 +89,6 @@ class Node
                 return  max + 1;
             }
 
-		};
+        };
 
 }
