@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 #include "Node.h"
+#include "DoubleLinkedList.h"
 
 int main() {
 
@@ -13,4 +14,10 @@ int main() {
 
 	std::cout <<  list;
 
+	DoubleLinkedList dlist;
+
+	dlist.appendAtHead(43);
+	dlist.appendAtHead(33);
+	dlist.appendAtHead(13);
+	dlist.printList();
 }
