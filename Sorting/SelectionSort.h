@@ -41,10 +41,10 @@ public:
 
 template <class U>
 	std::ostream& operator<< (std::ostream& o, const SelectionSort<U>& array) {
-	o << "\nArray is: ";
-	for (const auto& elem : array.data) {
-		o << elem << " ";
+		o << "\nArray is: ";
+		for (const auto& elem : array.data) {
+			o << elem << " ";
+		}
+		o << std::endl;
+		return o;
 	}
-
-	return o;
-}
